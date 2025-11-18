@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Helvetica Neue';
+    text-align: center;
+}
+section {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+    width: 100%;
+}
+section.white {
+    background-color: rgb(255, 255, 255);
+
+}
+section.gray {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+
+.contentFrame {
+    margin: 0 auto;
+    max-width: 40rem;
+}
+.contentRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+h1, h2 {
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+h2 {
+    font-size: 3em;
+}
+p {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+section.gray p {
+    font-weight: 200;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* #header */
+h1 {
+    font-size: 4em;
+    margin-bottom: -0.1em;
+    background-color: rgb(0, 0, 0);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+#jobTitle {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    background-color: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+
+/* TikTok Videos */
+#video-thumbnail-row {
+    display: flex;
+    overflow-x: auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    gap: min(40px, 3vw);
+    padding: 5px min(40px, 3vw); /* Bit of buffer so the mouseover expand doesn't get clipped */
+    margin: -1rem -0.5rem;
+    scrollbar-width: none;
+}
+.tikTok {
+    width: 233px;
+    /* height: 500px; */
+    max-width: 38vw;
+    object-fit: cover; /* Ensures aspect ratio is maintained within the set dimensions */
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 15px 0px;
+}
+img.tikTok:hover {
+    transform: scale(1.04) translateY(-0.5rem);
+    transition: 0.2s;
+}
+
+
+
+/* Media appearances */
+#mediaAppearances h2 {
+    /* background: linear-gradient(145deg, rgb(255, 0, 216) 5%, rgb(255, 253, 0) 95%); */
+    /* background: linear-gradient(114deg, rgb(234, 51, 208) 5%, rgb(236, 96, 63) 95%); */
+    background: linear-gradient(114deg, rgb(0, 232, 255) 5%, rgb(255, 0, 247) 95%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+.scrollableRow {
+    display: flex;
+    overflow-x: auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    gap: min(40px, 3vw);
+    padding: 5px min(40px, 3vw); /* Bit of buffer so the mouseover expand doesn't get clipped */
+    margin: -1rem -0.5rem;
+    scrollbar-width: none;
+}
+.horizontalThumbnail {
+    width: 300px;
+    /* height: 500px; */
+    max-width: 50vw;
+    object-fit: cover; /* Ensures aspect ratio is maintained within the set dimensions */
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 15px 0px;
+}
+.horizontalThumbnail:hover {
+    transform: scale(1.04) translateY(-0.5rem);
+    transition: 0.2s;
+}
+.specificAppearance {
+    width: 300px;
+}
+
+
+
+/* #latestWork */
+#latestWork p {
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
+
+
+/* #experience */
+#experience a, #sideQuests a {
+    text-decoration: underline;
+    font-weight: 300;
+}
+img.stickFigure {
+    margin: 0.3em;
+    margin-right: 1em;
+    height: 64px;
+    width: 64px;
+    filter: drop-shadow(0 0 1rem) drop-shadow(0 0 0.9rem);
+    /* drop-shadow (in some browsers) only stacks IF they are each slightly different */
+}
+.listItem {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0em 0em 2em 0em;
+}
+#experience h2 {
+    background: linear-gradient(114deg, rgb(0, 232, 255) 5%, rgb(255, 0, 247) 95%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+.grad11 { color: rgba(234, 51, 208, 1.0); }
+.grad12 { color: rgba(234, 62, 147, 1.0); }
+.grad13 { color: rgba(235, 73, 113, 1.0); }
+.grad14 { color: rgba(236, 96, 63, 1.0); }
+
+
+
+/* #recentWorks */
+img.portfolioGif {
+    border: 6px solid rgb(233, 233, 236);
+    border-radius: 20px;
+    margin: 1rem 1rem 0rem 1rem;
+    max-width: 35vw;
+}
+
+
+
+/* #sideQuests */
+#sideQuests h2 {
+    background: linear-gradient(114deg, rgb(0, 232, 255) 5%, rgb(255, 0, 247) 95%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+b {
+    font-weight: 600;
+}
+.grad21 { color: rgb(0, 232, 255); }
+.grad22 { color: rgb(105, 147, 245); }
+.grad23 { color: rgb(150, 90, 242); }
+.grad24 { color: rgb(255, 0, 247); }
+
+
+
+/* #letsGetInTouch */
+#highFive {
+    height: 128px;
+    width: 128px;
+    margin: 0 4vw 1rem 4vw;
+}
+.contactMe {
+    width: 20rem;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    img#profilePhoto {
+        max-width: 100%;
+        float: none;
+        margin: 1rem 0;
+    }
+    img.portfolioGif {
+        max-width: 20rem;
+    }
+    .contentRow {
+        align-items: flex-start;
+    }
+    #highFive {
+        margin: 0 30% 1rem 30%;
+    }
+    #a {order: 2}
+    #b {order: 1}
+    #c {order: 3}
+    .contactMe {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 13.2vw;
+        margin: 0;
+    }
+    #jobTitle {
+        font-size: 5.0vw;
+    }
+    h2 {
+        font-size: 12.9vw;
+    }
+    img.devIcons {
+        max-width: 5.8vw;
+    }
+    img.iPhone {
+        margin: 0.25rem;
+        max-width: 40vw;
+    }
+    .specificAppearance {
+        width: 400px;
+    }
+}
