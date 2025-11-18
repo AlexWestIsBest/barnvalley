@@ -8,9 +8,9 @@ body {
     align-items: center;
     font-family: 'Helvetica Neue';
     text-align: center;
+    background-color: black;
 }
 section {
-    background-color: black;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0rem 0.5rem 1rem 0.5rem;
@@ -18,7 +18,7 @@ section {
 }
 section.white {
     background-color: rgb(255, 255, 255);
-
+    color: black
 }
 section.gray {
     background-color: rgb(0, 0, 0);
