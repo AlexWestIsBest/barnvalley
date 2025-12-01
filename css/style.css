@@ -46,6 +46,7 @@ h1, h2 {
     text-align: center;
     font-weight: 900;
     letter-spacing: -3px;
+    /* font-family: serif; */
 }
 h2 {
     font-size: 3em;
