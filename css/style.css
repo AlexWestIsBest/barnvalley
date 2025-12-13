@@ -180,7 +180,7 @@ img.stickFigure {
     margin: 0em 0em 2em 0em;
 }
 #dailySchedule h2 {
-    background: linear-gradient(114deg, rgb(0, 232, 255) 5%, rgb(255, 0, 247) 95%);
+    background: linear-gradient(114deg, rgba(234, 51, 208, 1.0) 5%, rgba(236, 96, 63, 1.0) 95%);
     -webkit-background-clip: text;
     color: transparent;
     display: inline-block;
@@ -192,7 +192,7 @@ img.stickFigure {
 
 
 
-/* #recentWorks */
+/* #quote */
 img.portfolioGif {
     border: 6px solid rgb(233, 233, 236);
     border-radius: 20px;
@@ -246,9 +246,9 @@ b {
     #highFive {
         margin: 0 30% 1rem 30%;
     }
-    #a {order: 2}
-    #b {order: 1}
-    #c {order: 3}
+    #a {order: 1}
+    #b {order: 3}
+    #c {order: 2}
     .contactMe {
         margin-bottom: 1em;
     }
